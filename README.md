@@ -12,7 +12,7 @@ After training the model you'll be able to see the classifier id.
 After you downloaded or cloned this repository, you must run 
 
 ```
-npm install
+$ npm install
 ```
 
 and then head right over the index.js to change some stuff that's between <>: 
@@ -37,7 +37,7 @@ const visualRecognition = new VisualRecognitionV3({
 Write in the console:
 
 ```
-node index.js
+$ node index.js
 ```
 
 Once the console tells you "Server Ok", open in your browser the http://localhost:8080/
