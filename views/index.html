@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Save the Planet</title>
+    <!--Style-->
+
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+
+</head>
+
+<body class="is-preload">
+
+
+    <!-- Header -->
+    <div id="header">
+        <i class="logo fas fa-recycle"></i>
+        <h1>Help! Earth needs you</h1>
+        <br>
+        <p> Have you hugged your recycle bin today?
+            <br>
+            Share your photos and learn what things you can recycle with IBM!</p>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+        <header class="major container medium">
+            <h2>The recycling process starts when you separate the materials
+                that can be recycled from your other trash.
+                <br> <br>
+                The problem is what do we separate!</h2>
+           
+        </header>
+
+
+<!--File Upload-->
+
+        <footer>
+
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+            <div class="container center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="white">Custom File Upload</h1>
+                        <p class="white">In this example, submit is allowed only in case the user uploads a valid image
+                            file.</p>
+                    </div>
+                </div>
+
+              
+                    <div class="row">
+                        <div style="margin-left: 25%;" class="col-md-6 col-md-offset-3 center">
+                            <div class="btn-container">
+                                <!--the three icons: default, ok file (img), error file (not an img)-->
+                                <h1 class="imgupload"><i class="fa fa-file-image-o"></i></h1>
+                                <h1 class="imgupload ok"><i class="fa fa-check"></i></h1>
+                                <h1 class="imgupload stop"><i class="fa fa-times"></i></h1>
+                                <!--this field changes dinamically displaying the filename we are trying to upload-->
+                                <p id="namefile">Only pics allowed! (jpg,jpeg,bmp,png)</p>
+                                <!--our custom btn which which stays under the actual one-->
+                                <button type="button" id="btnup" class="btn btn-primary btn-lg">Browse for your
+                                    pic!</button>
+                                <!--this is the actual file input, is set with opacity=0 beacause we wanna see our custom one-->
+                                <input type="file" value="" name="image" id="fileup">
+                            </div>
+                        </div>
+                    </div>
+                    <!--additional fields-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--the defauld disabled btn and the actual one shown only if the three fields are valid-->
+                            <input type="submit" value="Submit!" class="btn btn-primary" id="submitbtn">
+                            <button type="button" class="btn btn-default" disabled="disabled" id="fakebtn">Submit! <i
+                                    class="fa fa-minus-circle"></i></button>
+                        </div>
+                    </div>
+              
+            </div>
+
+
+        </footer>
+        <br><br>
+
+    </div>
+
+    <h3 style="text-align: center;">Some Examples</h3><br><br>
+
+    <!--Examples-->
+
+    <div class="box alt container">
+        <section class="feature left">
+            <a href="#" class="image"><img src="./images/paper.jpg" alt="" /></a>
+            <div class="content">
+                <h3>Sheets of paper</h3>
+                <p>The recycling of paper is the process by which waste paper is turned into new paper products.
+                    Recycling paper conserves natural resources, saves energy, reduces greenhouse gas emissions, and
+                    keeps landfill space free for other types of trash that can't be recycled.</p>
+            </div>
+        </section>
+        <section class="feature right">
+            <a href="#" class="image"><img src="./images/plastic.jpg" alt="plastic" /></a>
+            <div class="content">
+                <h3>Plastic Bottles</h3>
+                <p>By recycling your plastic water bottles, you can positively impact the environment in several ways.
+                    Recycling plastic water bottles helps to conserve natural resources, specifically oil, which is a
+                    nonrenewable natural resource available only in limited supply.</p>
+            </div>
+        </section>
+        <section class="feature left">
+            <a href="#" class="image"><img src="./images/can.jpg" alt="metal" /></a>
+            <div class="content">
+                <h3>Aluminium Cans</h3>
+                <p>Recycling aluminum cans saves a considerable amount of energy; it also reduces carbon dioxide
+                    emissions and the amount of waste headed into landfills. Collecting your cans for recycling is an
+                    important step you can take to help the environment.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container medium">
+
+            <header class="major last">
+                <h2>Questions or comments?</h2>
+            </header>
+
+            <p>Feel free to contact us if you have a question or want to learn more about the amazing AI behind this
+                app.</p>
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-6 col-12-mobilep">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-6 col-12-mobilep">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+
+
+
+            <ul class="copyright">
+                <li>&copy; All rights reserved.</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="./assets/js/animationupload.js"></script>
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/browser.min.js"></script>
+    <script src="./assets/js/breakpoints.min.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/subirimg.js"></script>
+
+
+
+</body>
+
+</html>
